@@ -8,7 +8,7 @@
         </table>
         <p>商品参数</p>
         <table  class="table2">
-            <tr v-for="item in goodsParam.infos">
+            <tr v-for="item in goodsParam.infos" :key="item.key">
                 <td>{{item.key}}</td>
                 <td>{{item.value}}</td>
             </tr>

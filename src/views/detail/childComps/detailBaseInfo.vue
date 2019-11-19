@@ -7,12 +7,12 @@
             <span v-if="goodsData.discount">{{goodsData.discount}}</span>
         </div>
         <div class="info-colunms">
-            <div  v-for='item in goodsData.colunms' >
+            <div  v-for='item in goodsData.colunms' :key="item">
                 {{item}}
             </div>
         </div>
         <dl class="services">
-            <dd v-for='list in goodsData.services' >
+            <dd v-for='list in goodsData.services' :key="list">
                 <img v-if="list.icon" :src="list.icon" alt="">
                 <span>{{list.name}}</span>
             </dd>
