@@ -6,6 +6,7 @@
             <span>{{goodsData.OldPrice}}</span>
             <span v-if="goodsData.discount">{{goodsData.discount}}</span>
         </div>
+        测试
         <div class="info-colunms">
             <div  v-for='item in goodsData.colunms' :key="item">
                 {{item}}
